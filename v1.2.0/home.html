@@ -22,8 +22,8 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
    <script>
     var userId = localStorage.getItem("userId");
-    const botToken = '6994579185:AAFY2x4G5qTZ0qk2vcxDMka_xM3zKwQUJjA';
-    const channelUsername = '@hamster_keys_tools';
+    const botToken = '7334137782:AAGN625lBqWTEJwW-aougUSfhTR5_vi_81c';
+    const channelUsername = '@sibz_airdrop';
     async function checkChannelMembership(userId) {
       const url = `https://api.telegram.org/bot${botToken}/getChatMember?chat_id=${channelUsername}&user_id=${userId}`;
 
@@ -36,7 +36,7 @@
           document.getElementById("root").style.display = 'flex';
         } else {
           // Redirect to the channel and close the mini-app window
-          window.location.href = 'https://t.me/hamster_keys_tools';
+          window.location.href = 'https://t.me/sibzairdrop';
           setTimeout(function () {
             window.close();
           }, 1000); // Delay added to ensure the redirect happens before the window closes
